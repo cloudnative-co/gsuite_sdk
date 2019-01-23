@@ -2,13 +2,13 @@ from __future__ import print_function
 from googleapiclient.http import MediaFileUpload
 from googleapiclient.http import MediaIoBaseDownload
 from googleapiclient.http import MediaIoBaseUpload
-from .drive import Drive
+from .base import DriveBase
 from .metadata import Metadata
 import io
 import os
 
 
-class Files(Drive):
+class Files(DriveBase):
     GAPI_MEDIA_IO_CHUNK_SIZE = 1024 * 1024
 
     def list(self, **argv):
