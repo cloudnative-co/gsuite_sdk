@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # import module snippets
 from .base import *
-from .metadata import *
-from .files import Files
+from .spreadsheets import SpreadSheets
+from .sheet import Sheet
+
